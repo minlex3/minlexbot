@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "mongoUrl": "mongodb+srv://user_minlex:adminadmin@cluster0.j8ej8.mongodb.net/tgapp?retryWrites=true&w=majority",
+  "tokenTelegram": "1679072981:AAG5CcS0wLuWPDyNLr0MWPFroA74DaoTxXQ",
+  "baseUrl": "http://localhost:5000"
+}
