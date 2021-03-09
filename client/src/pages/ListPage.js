@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Loader } from '../components/Loader'
 import { UserList } from '../components/UserList'
 
@@ -14,7 +14,6 @@ export const ListPage = () => {
     const headers = {}
 
     let response = await fetch(url, { method, body, headers })
-    console.log('REsponse: ', response)
 
     if (response.status == 200) {
       if (users.length) {
@@ -31,7 +30,6 @@ export const ListPage = () => {
         setUsers(data)
       }
     } else {
-      console.log('Error: ', response.statusText)
       await delay(5000)
       await fetchUsers()
     }
