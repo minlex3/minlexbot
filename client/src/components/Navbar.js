@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { NavLink, useHistory } from 'react-router-dom'
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
   return (
@@ -10,7 +10,7 @@ export const Navbar = () => {
           style={{ padding: '0 2rem' }}
         >
           <span className="brand-logo">Minlex bot</span>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <ul className="right">
             <li>
               <NavLink to="/list">User list</NavLink>
             </li>

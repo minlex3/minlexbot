@@ -14,6 +14,7 @@ export const ListPage = () => {
     const headers = {}
 
     let response = await fetch(url, { method, body, headers })
+    console.log('REsponse: ', response)
 
     if (response.status == 200) {
       if (users.length) {

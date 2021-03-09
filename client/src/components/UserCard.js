@@ -29,7 +29,7 @@ export const UserCard = ({ messages, responses }) => {
     if (event.key === 'Enter') {
       try {
         const data = await request(
-          '/api/message/user/send',
+          '/api/message/send',
           'POST',
           {
             messageId: id,

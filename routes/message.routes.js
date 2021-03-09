@@ -51,7 +51,7 @@ router.get('/message/:id', async (req, res) => {
 })
 
 // /api/message/user/send
-router.post('/user/send', async (req, res) => {
+router.post('/send', async (req, res) => {
   try {
     const { messageId, text } = req.body
 
